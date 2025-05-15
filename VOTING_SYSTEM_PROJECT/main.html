@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Arial', sans-serif;
+        }
+        body {
+            background-image: url('background img.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+        }
+        .header {
+            font-size: 95px;
+            color: hwb(41 2% 29% / 0.938); 
+            margin-top: 40px;
+            margin-bottom: 20px;
+            text-align: center;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        .container {
+            margin-right: 12vw;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 15%;
+            border-radius: 10px;
+            text-align: center;
+            width: 300px;
+        }
+        .logo img {
+            width: 100px;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 10px 0;
+            display: inline-block;
+            border: none;
+            background: #333;
+            color: #fff;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .form-group input:focus {
+            background: #555;
+        }
+        .register-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            margin: 10px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .register-button:hover {
+            background-color: #45a049;
+        }
+        .input-field {
+            width: 200px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 10px auto;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="/submit-form" method="post">  
+        <div class="container">
+        <div class="logo">
+        <img src='download (2) (1).jpg' alt="Website Logo"> 
+        </div>
+        <form action="/submit-form">
+            <div class="form-group">
+                <input type="email" id="email" name="email" placeholder="Email ID" required>
+            </div>
+            <div class="form-group">
+                <input type="password" id="password" name="password" placeholder="Password" required>
+            </div>
+            <button type="submit" class="register-button" onclick=addOtp()>Register</button>            
+        </form> 
+    </div>
+    
+</body>
+<script>
+   const addOtp = () => {
+        alert("Please Check Your Email")
+   }
+</script>
+</html>
